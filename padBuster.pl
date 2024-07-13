@@ -58,7 +58,6 @@ GetOptions( "log" => \$logFiles,
             "plaintext=s" => \$plainTextInput,
 	    "encodedtext=s" => \$encodedPlainTextInput,
             "noencode" => \$noEncodeOption,
-            "veryverbose" => \$superVerbose,
             "proxy=s" => \$proxy,
             "proxyauth=s" => \$proxyAuth,
             "noiv" => \$noIv,
@@ -68,7 +67,10 @@ GetOptions( "log" => \$logFiles,
             "bruteforce" => \$bruteForce,
             "ignorecontent" => \$ignoreContent,
             "usebody" => \$useBody,
-            "verbose" => \$verbose);
+            "verbose" => \$verbose,
+            "v" => \$verbose,
+            "veryverbose" => \$superVerbose,
+            "vv" => \$superVerbose);
   
 print "\n+-------------------------------------------+\n";
 print "| PadBuster - v0.3.3                        |\n";
